@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 
-function Item({ name, category }) {
+function Item({ 
+  name, 
+  category, 
+  newItemName, 
+  newCategory, 
+  handleNewCategory, 
+  handleNewItemName
+  }) {
   const [isInCart, setIsInCart] = useState(false);
 
   function handleAddToCartClick() {
